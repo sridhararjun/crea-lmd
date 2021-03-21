@@ -1,0 +1,132 @@
+/* video {
+    width: 100%;
+    height: 100%;
+} */
+
+video {
+    width: 100%;
+    height: 100%;
+}
+
+video source {
+    width: 100%;
+    /* height: auto; */
+}
+
+.pc-video {
+    display: grid;
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+}
+
+.mobile-video {
+    display: none;
+    @include media-breakpoint-down(lg) {
+        display: grid;
+    }
+}
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
+
+ul.left {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    animation: list-animation 23s;
+}
+
+ul.right {
+    position: absolute;
+    top: 50%;
+    right: 7%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: table-cell;
+    animation: list-animation 23s;
+}
+
+@keyframes list-animation {
+    0% {
+        opacity: 0;
+    }
+    49% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+ul li {
+    position: relative;
+    list-style: none;
+    margin: 0 2px;
+    padding: 19%;
+}
+
+
+/* ul li.right {
+    right: 70%;
+} */
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 57px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.9;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa-pinterest {
+    background: #cb2027;
+    color: white;
+}

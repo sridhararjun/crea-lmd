@@ -1,0 +1,49 @@
+img {
+    padding: 10pt;
+}
+
+.Choose {
+    text-align: center;
+    background-image: url('../../crea-abstract.jpg');
+    background-color: indigo;
+}
+
+
+/*  */
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700italic);
+.button-two {
+    border-radius: 4px;
+    background-color: transparent;
+    border: none;
+    width: 300pt;
+    transition: all 0.5s;
+    font-size: x-large;
+    font-family: "Times New Roman", Times, serif;
+    color: goldenrod;
+}
+
+.button-two span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button-two span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button-two:hover span {
+    padding-right: 25px;
+}
+
+.button-two:hover span:after {
+    opacity: 1;
+    right: 0;
+}

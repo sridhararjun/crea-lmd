@@ -34,7 +34,7 @@ body {
     background: #f1f1f1;
 }
 
-ul.left {
+ul {
     position: absolute;
     top: 50%;
     left: 10%;
@@ -45,7 +45,8 @@ ul.left {
     animation: list-animation 23s;
 }
 
-ul.right {
+
+/* ul.right {
     position: absolute;
     top: 50%;
     right: 7%;
@@ -54,7 +55,7 @@ ul.right {
     padding: 0;
     display: table-cell;
     animation: list-animation 23s;
-}
+} */
 
 @keyframes list-animation {
     0% {
@@ -130,3 +131,98 @@ a:hover {
     background: #cb2027;
     color: white;
 }
+
+
+/* @media only screen and (orientation:portrait) {
+    #container {
+        height: 100vw;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+@media only screen and (orientation:landscape) {
+    #container {
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+} */
+
+@media screen and (max-width: 650px) {
+    .videoContainer {
+        display: none;
+    }
+    .rotateScreen {
+        display: block;
+    }
+    img {
+        height: auto;
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .videoContainer {
+        display: block;
+    }
+    .rotateScreen {
+        display: none;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    img {
+        margin: 0%;
+        padding: 0%;
+        height: auto;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 651px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+/* .img {
+    transition: all 0.5s;
+    color: goldenrod;
+}
+
+.img span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.img span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.img:hover span {
+    padding-right: 25px;
+}
+
+.img:hover span:after {
+    opacity: 1;
+    right: 0;
+} */

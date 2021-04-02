@@ -8,6 +8,7 @@ import instagram from "../../assets/insta.png"
 import pinterest from "../../assets/pin.png"
 import tumblr from "../../assets/tumblr.png"
 import youtube from "../../assets/youtube.png"
+import audio_crea from "../../assets/crea-audio.mp3"
 
 function UnderConstruction() {
     return (
@@ -21,9 +22,12 @@ function UnderConstruction() {
          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
       </ul>
-      {/* <video class="pc-video" autoPlay playsInline preload="auto" muted>
+      <video class="pc-video" autoPlay playsInline preload muted>
          <source src={crea} type="video/mp4"/>
-      </video> */}
+      </video>
+      <audio id="player" autoPlay>
+      <source src={audio_crea} type="audio/mpeg"/>
+</audio>
    </div>
    <div class="rotateScreen">
       <span>Please rotate your screen for best experience</span>

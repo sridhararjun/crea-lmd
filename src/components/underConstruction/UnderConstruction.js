@@ -10,24 +10,48 @@ import tumblr from "../../assets/tumblr.png"
 import youtube from "../../assets/youtube.png"
 import audio_crea from "../../assets/crea-audio.mp3"
 
+// window.onload = function(){
+//     var els = document.getElementsByClassName("play-link");
+//     var creaVid = document.getElementsByClassName("pc-video");
+//     els.addEventListener('click', function(e) {
+//         e.target.previousElementSibling.classList.add('play');
+//         return false;
+//     });
+//     creaVid.addEventListener("click",function(e){
+//         if(creaVid.paused==true){
+//             creaVid.play();
+//         }
+//     });
+    
+// }
+
 function UnderConstruction() {
+    function handleClick(e){
+        var els = document.getElementById("play-link");
+        var creaVid = document.getElementById("video");
+        var reach = document.getElementById("reach");
+        var animatedIconsList = document.getElementById("icons").getElementsByTagName("li");
+        for(var i=0;i<animatedIconsList.length;i++){
+            animatedIconsList[i].classList.add("play");
+        }
+        reach.classList.add("play");
+        creaVid.play();
+    }
     return (
 <div>
    <div class="social-container">
-       <span class="social-reach">Connect with us through..</span>
-      <ul class="social-icons">
+      <span id="reach" class="social-reach">Connect with us through..</span>
+      <ul id="icons" class="social-icons">
          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-         <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
+         <li><a href="#"><i class="fa fa-envelope"></i></a></li>
          <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
       </ul>
-      <video class="pc-video" autoPlay playsInline preload muted>
+      <a href="#" onClick={handleClick} id="play-link">Play</a>
+      <video id="video" class="pc-video" playsInline>
          <source src={crea} type="video/mp4"/>
       </video>
-      <audio id="player" autoPlay>
-      <source src={audio_crea} type="audio/mpeg"/>
-</audio>
    </div>
    <div class="rotateScreen">
       <span>Please rotate your screen for best experience</span>

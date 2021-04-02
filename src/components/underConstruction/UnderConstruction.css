@@ -1,11 +1,11 @@
-/* video {
-    width: 100%;
-    height: 100%;
-} */
-
 video {
     width: 100%;
     height: 100%;
+}
+
+img {
+    width: 10px;
+    height: 10px;
 }
 
 video source {
@@ -42,7 +42,7 @@ ul {
     margin: 0;
     padding: 0;
     display: table-cell;
-    animation: list-animation 23s;
+    /* animation: list-animation 23s; */
 }
 
 
@@ -175,7 +175,7 @@ a:hover {
         display: none;
     }
     img {
-        width: 100%;
+        width: 10%;
         height: auto;
     }
 }

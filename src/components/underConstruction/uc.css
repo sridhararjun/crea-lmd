@@ -1,0 +1,151 @@
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+    /* body {
+    background-color: rgba(0, 181, 245, 0.05);
+} */
+    
+    .social-container {
+        /* width: 40px; */
+        /* margin: 40vh auto; */
+        text-align: center;
+    }
+    
+    .social-icons {
+        list-style: none;
+        left: 7%;
+        position: absolute;
+        /* margin: 1em; */
+    }
+    
+    .social-icons li {
+        padding-bottom: 1%;
+        display: block;
+        margin: 0.15em;
+        position: relative;
+        font-size: 1.2em;
+    }
+    
+    .social-icons i {
+        color: #000;
+        position: absolute;
+        top: 21px;
+        left: 21px;
+        transition: all 265ms ease-out;
+    }
+    
+    .social-icons a {
+        display: block;
+    }
+    
+    .social-icons a:before {
+        transform: scale(1);
+        -ms-transform: scale(1);
+        -webkit-transform: scale(1);
+        content: " ";
+        width: 60px;
+        height: 60px;
+        border-radius: 100%;
+        display: block;
+        background: linear-gradient(45deg, #9e9027, #e6cb00);
+        transition: all 265ms ease-out;
+    }
+    
+    .social-icons a:hover:before {
+        transform: scale(0);
+        transition: all 265ms ease-in;
+    }
+    
+    .social-icons a:hover i {
+        transform: scale(2.2);
+        -ms-transform: scale(2.2);
+        -webkit-transform: scale(2.2);
+        color: #000;
+        background: -webkit-linear-gradient(45deg, #9e9027, #e6cb00);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all 265ms ease-in;
+    }
+    
+    li {
+        /* display: block; */
+        padding-top: 15%;
+        padding-bottom: 15%;
+        /* animation: list-animation 23s; */
+    }
+    
+    a {
+        position: relative;
+        z-index: 10;
+    }
+    
+    .pc-video {
+        /* position: absolute; */
+        width: 100%;
+    }
+    
+    @keyframes list-animation {
+        0% {
+            opacity: 0;
+        }
+        49% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 0;
+        }
+        99% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    
+    @media screen and (max-width: 650px) {
+        .social-container {
+            display: none;
+        }
+        .rotateScreen {
+            display: block;
+        }
+        /* img {
+        height: auto;
+        width: 30%;
+    } */
+    }
+    
+    @media screen and (min-width: 600px) {
+        .social-container {
+            display: block;
+        }
+        .rotateScreen {
+            display: none;
+        }
+        .social-icons {
+            padding-top: 10%;
+        }
+        .social-icons li {
+            padding: 30%
+        }
+        /* img {
+        width: 10%;
+        height: auto;
+    } */
+    }
+    /* @media screen and (max-width: 650px) {
+    img {
+        margin: 0%;
+        padding: 0%;
+        height: auto;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 651px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
+} */
+    /* li.a {
+    position: absolute;
+} */

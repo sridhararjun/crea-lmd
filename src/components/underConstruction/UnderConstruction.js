@@ -31,11 +31,14 @@ function UnderConstruction() {
         var creaVid = document.getElementById("video");
         var reach = document.getElementById("reach");
         var animatedIconsList = document.getElementById("icons").getElementsByTagName("li");
+        var toBeRemoved = document.getElementById("btn");
         for(var i=0;i<animatedIconsList.length;i++){
             animatedIconsList[i].classList.add("play");
         }
         reach.classList.add("play");
         creaVid.play();
+        toBeRemoved.remove();
+        
     }
     return (
 <div>
@@ -48,7 +51,8 @@ function UnderConstruction() {
          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
          <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
       </ul>
-      <a href="#" onClick={handleClick} id="play-link">Play</a>
+      {/* <a href="#" onClick={handleClick} id="play-link">Play</a> */}
+      <div id="btn"><span class="noselect"><a href="#" onClick={handleClick} id="play-link">Play</a></span><div id="circle"></div></div>
       <video id="video" class="pc-video" playsInline>
          <source src={crea} type="video/mp4"/>
       </video>

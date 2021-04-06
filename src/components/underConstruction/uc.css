@@ -213,6 +213,9 @@
         .social-icons li {
             padding: 30%
         }
+        .social-reach {
+            font-size: 1.6rem;
+        }
     }
     
     html {

@@ -1,6 +1,7 @@
 import crea from "../../assets/crea move.mp4"
 import "./uc.css"
 import rotateScreen from "../../assets/rotate-1.png"
+// import ComingSoon from "../comingSoon/ComingSoon.js"
 
 
 function UnderConstruction() {
@@ -63,6 +64,14 @@ function UnderConstruction() {
                <i class="fa fa-pinterest"></i>
                <div class="slider">
                   <p>pinterest</p>
+               </div>
+            </a>
+         </li>
+         <li class="pinterest">
+            <a href="/coming-soon">
+               <i class="fa fa-safari"></i>
+               <div class="slider">
+                  <p>Our website</p>
                </div>
             </a>
          </li>

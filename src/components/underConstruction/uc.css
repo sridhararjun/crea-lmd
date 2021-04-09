@@ -354,6 +354,7 @@
         background: #eebb5c;
         border-radius: 17px;
         transition: all 0.5s 0.3s ease;
+        z-index: -1;
     }
     
     .slider p {

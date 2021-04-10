@@ -42,6 +42,8 @@
         list-style: none;
         left: 7%;
         position: absolute;
+        font-size: 1.1rem;
+        justify-content: center;
         /* margin: 1em; */
     }
     
@@ -325,34 +327,35 @@
     } */
     
     ul li.facebook div.slider {
-        background: #4267B2;
+        background: transparent;
     }
     
     ul li.pinterest div.slider {
-        background: #E60023;
+        background: transparent;
     }
     
     ul li.instagram div.slider {
-        background: #8a3ab9;
+        background: transparent;
     }
     
     ul li.mail div.slider {
-        background: #BB001B;
+        background: transparent;
     }
     
     ul li.linkedin div.slider {
-        background: #0077b5;
+        background: transparent;
     }
     
     .slider {
         content: "";
         position: absolute;
         top: 10px;
-        left: 51px;
+        left: 100px;
         width: 0px;
         height: 40px;
         background: #eebb5c;
         border-radius: 17px;
+        border: 1px solid goldenrod;
         transition: all 0.5s 0.3s ease;
         z-index: -1;
     }
@@ -360,11 +363,12 @@
     .slider p {
         font-family: arial;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 25px;
         font-weight: 900;
-        color: #fff;
+        color: goldenrod;
+        padding: 5px;
         text-align: center;
-        line-height: 40px;
+        line-height: 30px;
         opacity: 0;
         transition: all 0.6s ease;
     }

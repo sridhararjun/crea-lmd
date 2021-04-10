@@ -27,11 +27,11 @@ function UnderConstruction() {
    <div class="social-container">
       <span id="reach" class="social-reach">Connect with us through..</span>
       <ul id="icons" class="social-icons">
-         <li class="instagram">
-            <a href="#">
-               <i class="fa fa-instagram"></i>
+      <li class="pinterest">
+            <a href="/coming-soon">
+               <i class="fa fa-safari"></i>
                <div class="slider">
-                  <p>instagram</p>
+                  <p>Website</p>
                </div>
             </a>
          </li>
@@ -43,11 +43,11 @@ function UnderConstruction() {
                </div>
             </a>
          </li>
-         <li class="linkedin">
+         <li class="instagram">
             <a href="#">
-               <i class="fa fa-linkedin"></i>
+               <i class="fa fa-instagram"></i>
                <div class="slider">
-                  <p>linkedin</p>
+                  <p>instagram</p>
                </div>
             </a>
          </li>
@@ -67,11 +67,11 @@ function UnderConstruction() {
                </div>
             </a>
          </li>
-         <li class="pinterest">
-            <a href="/coming-soon">
-               <i class="fa fa-safari"></i>
+         <li class="linkedin">
+            <a href="#">
+               <i class="fa fa-linkedin"></i>
                <div class="slider">
-                  <p>Our website</p>
+                  <p>linkedin</p>
                </div>
             </a>
          </li>
